@@ -1,11 +1,13 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.ArrayList;
 
 public class DrawGraphics {
     BouncingBox box1;
     BouncingBox box2;
     BouncingBox box3;
     BouncingBox box4;
+    ArrayList<BouncingBox> boxes = new ArrayList<BouncingBox>();
 
     /** Initializes this class for drawing. */
     public DrawGraphics() {
@@ -13,6 +15,10 @@ public class DrawGraphics {
         box2 = new BouncingBox(150, 60, Color.blue);
         box3 = new BouncingBox(220, 70, Color.magenta);
         box4 = new BouncingBox(100, 40, Color.lightGray);
+        boxes.add(box1);
+        boxes.add(box2);
+        boxes.add(box3);
+        boxes.add(box4);
 
     }
 
@@ -25,10 +31,10 @@ public class DrawGraphics {
         surface.setColor(Color.blue);
         surface.drawString("WATCH US GO!", 40, 40);
 
-        box1.draw(surface);
-        box2.draw(surface);
-        box3.draw(surface);
-        box4.draw(surface);
+        for(BouncingBox box : boxes){
+          box.draw(surface);
+        }
+
         box1.setMovementVector(0, 1);
         box2.setMovementVector(-1, 2);
         box3.setMovementVector(-14, 8);
