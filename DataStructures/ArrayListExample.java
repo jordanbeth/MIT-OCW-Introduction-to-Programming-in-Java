@@ -6,7 +6,7 @@ class ArrayListExample {
 
 public static void main(String[] args){
 
-        // instantiate a new array list called strings, which holds a collection of elements of the string data type
+        // instantiate a new Array List called strings, which holds a collection of elements of the string data type
         ArrayList<String>strings = new ArrayList<String>();
 
         // add method for an Array List
