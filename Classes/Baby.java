@@ -49,5 +49,15 @@ public static void main(String[] args){
         kate.sayHi();
         kate.eat(1);
         System.out.println(kate.weight);
+
+        // Test equality of two object's references
+        Baby donnie1 = new Baby("Donnie", true);
+        Baby donnie2 = new Baby("Donnie", true);
+
+        // prints out false
+        System.out.println(donnie1 == donnie2);
+
+        // You can modify an object, but not its reference
+        donnie1 = donnie2; 
 }
 }
