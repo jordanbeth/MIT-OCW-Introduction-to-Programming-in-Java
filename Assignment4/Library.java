@@ -2,53 +2,53 @@ import java.util.ArrayList;
 
 public class Library {
 // Add the implementation to this class based on main()
-  String address;
-  ArrayList<Book> inventory = new ArrayList<Book>();
-  static String openingHours = "9 AM";
-  static String closingHours = "5 PM";
+String address;
+ArrayList<Book> inventory = new ArrayList<Book>();
+static String openingHours = "9 AM";
+static String closingHours = "5 PM";
 
-  public Library(String location){
-    address = location;
-  }
+public Library(String location){
+        address = location;
+}
 
-  public void addBook(Book newBook){
-    inventory.add(newBook);
-  }
+public void addBook(Book newBook){
+        inventory.add(newBook);
+}
 
-  public static void printOpeningHours(){
-    System.out.println(openingHours);
-  }
+public static void printOpeningHours(){
+        System.out.println(openingHours);
+}
 
-  public void printAddress(){
-    System.out.println(address);
-  }
+public void printAddress(){
+        System.out.println(address);
+}
 
-  public void borrowBook(String bookTitle){
-    for(int i = 0; i < inventory.size(); i++){
-      if ((inventory.get(i).title == bookTitle) && (inventory.get(i).isRented == false)){
-        inventory.get(i).isRented = true;
-        System.out.println("You borrowed " + bookTitle);
-      }else{
-        System.out.println("Sorry, we don't have that book right now.");
-      }
-    }
-  }
+public void borrowBook(String bookTitle){
+        for(int i = 0; i < inventory.size(); i++) {
+                if ((inventory.get(i).title == bookTitle) && (inventory.get(i).isRented == false)) {
+                        inventory.get(i).isRented = true;
+                        System.out.println("You borrowed " + bookTitle);
+                }else{
+                        System.out.println("Sorry, we don't have that book right now.");
+                }
+        }
+}
 
-  public void printAvailableBooks(){
-    for(int i = 0; i < inventory.size(); i++){
-      if (inventory.get(i).isRented == false){
-        System.out.println(inventory.get(i).title);
-      }
-    }
-  }
+public void printAvailableBooks(){
+        for(int i = 0; i < inventory.size(); i++) {
+                if (inventory.get(i).isRented == false) {
+                        System.out.println(inventory.get(i).title);
+                }
+        }
+}
 
-  public void returnBook(String bookTitle){
-    for(int i = 0; i < inventory.size(); i++){
-      if (inventory.get(i).title == bookTitle){
-        inventory.get(i).isRented = false;
-      }
-    }
-  }
+public void returnBook(String bookTitle){
+        for(int i = 0; i < inventory.size(); i++) {
+                if (inventory.get(i).title == bookTitle) {
+                        inventory.get(i).isRented = false;
+                }
+        }
+}
 
 public static void main(String[] args) {
 // Create two libraries
