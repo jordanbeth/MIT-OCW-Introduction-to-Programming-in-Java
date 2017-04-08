@@ -38,6 +38,11 @@
 * Get information about what is going on inside the program
 * `System.out.println()` is a very powerful debugging tool
 
+### 6. Examine Data
+* Examine your data.
+* Is your hypothesis correct?
+* Fix the error, or generate a new hypothesis
+
 ---
 ### JUnit Testing (Eclipse, Ant, or Maven)
 * Use this regression testing framework to implement unit testing in Java
