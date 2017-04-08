@@ -6,7 +6,7 @@
      - If number < x return false
      - If number >= y return false
      - Return true
----     
+   
 # Debugging
 
 ### 1. Don't Make Mistakes
