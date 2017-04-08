@@ -76,7 +76,7 @@ __**ex**__:
 * If you know that a variable holds a specific type, you can use a cast
   - __**ex**__:
 
-  
+
       ```java
          Drawable d = new BouncingBox(...);
          BouncingBox box = (BouncingBox) d;
