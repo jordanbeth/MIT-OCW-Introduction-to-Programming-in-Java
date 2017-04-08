@@ -31,4 +31,7 @@ Good classes are easy to understand and use.
 * Make **fields** and **methods** private by default
 * Only make public methods if you need to
 * If you need to access a field, create a method
-  - __**ex**__: ''' java public int getBar(){return bar;} '''
+  - __**ex**__:
+  ''' java
+    public int getBar(){return bar;} 
+  '''
