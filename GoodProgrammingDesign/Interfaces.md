@@ -58,17 +58,14 @@ __**ex**__:
 * Downcast - taking the Object and casing it into a more **specific** type of Object
   - __**ex**__:
 
-
         ```java
            // Downcast
            Object aSentenceObject = "This is a regular sentence";
            String aSentenceString = (String)aSentenceObject;
         ```
 
-
 * Upcast - taking the variable with a *more specific type* and casing it into a variable type that is more generic
   - __**ex**__:
-
 
         ```java
            // Upcast
@@ -76,10 +73,8 @@ __**ex**__:
            String aSentenceObject = (Object)aSentenceString;
         ```
 
-        
 * If you know that a variable holds a specific type, you can use a cast
   - __**ex**__:
-
 
       ```java
          Drawable d = new BouncingBox(...);
