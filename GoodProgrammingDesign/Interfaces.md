@@ -64,6 +64,8 @@ __**ex**__:
            Object aSentenceObject = "This is a regular sentence";
            String aSentenceString = (String)aSentenceObject;
         ```
+
+
 * Upcast - taking the variable with a *more specific type* and casing it into a variable type that is more generic
   - __**ex**__:
 
@@ -73,6 +75,8 @@ __**ex**__:
            Object aSentenceString = "This is a regular sentence";
            String aSentenceObject = (Object)aSentenceString;
         ```
+
+        
 * If you know that a variable holds a specific type, you can use a cast
   - __**ex**__:
 
