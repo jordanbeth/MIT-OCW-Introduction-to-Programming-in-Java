@@ -54,6 +54,7 @@ __**ex**__:
 
 # Casting
 * Casting allows you to take an Object of one particular type and "turn it into" another Object type
+
 * Downcast - taking the Object and casing it into a more **specific** type of Object
   - __**ex**__:
         ```java
