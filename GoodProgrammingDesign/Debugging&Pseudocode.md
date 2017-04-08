@@ -6,7 +6,7 @@
      - If number < x return false
      - If number >= y return false
      - Return true
-   
+
 # Debugging
 
 ### 1. Don't Make Mistakes
@@ -21,6 +21,22 @@
   - Tools: Detect potential errors
   - Test your implementation
   - Check your work: [assertions](http://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html)
+
+### 3. Reproduce the Error
+* Figure out how to repeat the error
+* Create a minimal test case
+  - go back to a working version
+  - introduce changes one at a time until the error reappears
+  - eliminate extra stuff that is not used
+
+### 4. Generate Hypothesis
+* What is going wrong?
+* What might be causing the error?
+* Question your assumptions
+
+### 5. Collect Information
+* Get information about what is going on inside the program
+* `System.out.println()` is a very powerful debugging tool
 
 ---
 ### JUnit Testing (Eclipse, Ant, or Maven)
