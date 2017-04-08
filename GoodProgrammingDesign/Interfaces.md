@@ -67,7 +67,7 @@ __**ex**__:
            String aSentenceObject = (Object)aSentenceString;
         ```
 * If you know that a variable holds a specific type, you can use a cast:
-- __**ex**__:
+  - __**ex**__:
       ```java
          Drawable d = new BouncingBox(...);
          BouncingBox box = (BouncingBox) d;
