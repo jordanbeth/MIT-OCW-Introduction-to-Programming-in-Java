@@ -11,8 +11,8 @@
 ## Pseudocode
 * A high-level, understandable description of what a program is supposed to do
 * Focus on structure, NOT details
-  + __**example problem**__: Is a number within the interval [x, y)?
-  + __**pseudocode__ :
+  + __**example**__: Is a number within the interval [x, y)?
+  + __**pseudocode**__:
      - If number < x return false
      - If number >= y return false
      - Return true
