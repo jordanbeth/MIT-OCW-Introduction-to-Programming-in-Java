@@ -13,7 +13,7 @@
 * Do NOT introduce errors in the first place
   - __**Reuse**__: find existing code that does what you want
   - __**Design**__: think before you code - **Pseudocode**
-  - __**Best Practices__: Recommended procedures / techniques to avoid common problems
+  - __**Best Practices**__: Recommended procedures / techniques to avoid common problems
 
 ### 2. Find Mistakes Early
 * It is easier to fix errors the earlier you find them
