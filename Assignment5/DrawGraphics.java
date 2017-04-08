@@ -3,14 +3,14 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class DrawGraphics {
-    BouncingBox box1;
+    BouncingBox box1; // a field or member variable
     BouncingBox box2;
     BouncingBox box3;
     BouncingBox box4;
     ArrayList<BouncingBox> boxes = new ArrayList<BouncingBox>();
 
     /** Initializes this class for drawing. */
-    public DrawGraphics() {
+    public DrawGraphics() { // constructor
         box1 = new BouncingBox(200, 50, Color.RED);
         box2 = new BouncingBox(150, 60, Color.blue);
         box3 = new BouncingBox(220, 70, Color.magenta);
@@ -24,11 +24,11 @@ public class DrawGraphics {
 
     /** Draw the contents of the window on surface. Called 20 times per second. */
     public void draw(Graphics surface) {
-        surface.setColor(Color.cyan);
+        surface.setColor(Color.CYAN);
         surface.drawLine(50, 50, 250, 250);
-        surface.setColor(Color.green);
+        surface.setColor(Color.GREEN);
         surface.drawRect(70, 70, 90, 90);
-        surface.setColor(Color.blue);
+        surface.setColor(Color.BLUE);
         surface.drawString("WATCH US GO!", 40, 40);
 
         for(BouncingBox box : boxes){
