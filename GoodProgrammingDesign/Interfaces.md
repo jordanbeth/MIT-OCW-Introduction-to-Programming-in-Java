@@ -64,7 +64,7 @@ __**ex**__:
            Object aSentenceObject = "This is a regular sentence";
            String aSentenceString = (String)aSentenceObject;
         ```
-* Downcast - taking the variable with a *more specific type* and casing it into a variable type that is more generic
+* Upcast - taking the variable with a *more specific type* and casing it into a variable type that is more generic
   - __**ex**__:
 
 
